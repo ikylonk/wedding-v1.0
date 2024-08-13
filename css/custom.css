@@ -1,0 +1,18 @@
+#hero {
+    background-image: url("../images/bg-hero1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#the-wedding-event {
+    background-image: url("../images/bg-the-wedding-event.jpg")
+}
+
+#proposed {
+    background-image: url("../images/bg-proposed.jpg")
+}
+
+footer {
+    background-image: url("../images/bg-footer.jpg")
+}
+
+/*# sourceMappingURL=custom.min.css.map */

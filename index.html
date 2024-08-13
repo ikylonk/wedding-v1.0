@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en" class="h-100 w-100">
+
+<head>
+    <title>Dahlia - Responsive Wedding Invitation</title>
+
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/script.min.js" as="script">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required CSS files -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body id="page-top" class="h-100 w-100">
+    
+    <!-- Preloader Start -->
+    <div class="preloader bg-white h-100 position-fixed w-100">
+        <svg width="100px" height="100px" viewBox="0 0 100 100" y="0px" x="0px"
+            class="position-absolute start-50 top-50 translate-middle">
+            <g>
+                <path class="path-heart"
+                    d="M89.49,37.8c0,25.54-39.59,46.24-39.59,46.24S10.31,63.34,10.31,37.8c0-29.59,39.59-28.67,39.59,0C49.9,10.06,89.49,8.21,89.49,37.8 z"
+                    stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.5"
+                    stroke="#000000" fill="#e8ede6"></path>
+                <path class="path-heart-sm"
+                    d="M89.63,70.9c-3.57,10.15-22.21,12.84-22.21,12.84s-12.84-13.77-9.26-23.92c4.14-11.76,19.75-5.86,15.74,5.54 C77.78,54.33,93.78,59.13,89.63,70.9z"
+                    stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.5"
+                    stroke="#000000" fill="#6d8a91"></path>
+            </g>
+        </svg>
+    </div>
+    <!-- Preloader End -->
+
+
+    <!-- Header Start -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container">
+                <!-- Navbar brand (mobile) -->
+                <div class="navbar-brand align-items-center d-flex d-lg-none me-0">
+                    <img width="300" height="67" src="img/navbar-brand.png" alt="Logo">
+                </div>
+
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar menu -->
+                <div id="navbar" class="collapse navbar-collapse justify-content-lg-center">
+                    <ul class="navbar-nav justify-content-end"> <!-- Added justify-content-end for right alignment -->
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#the-couple">The Couple</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#the-wedding-event">Events</a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar brand (desktop) -->
+                    <div class="navbar-brand d-none d-lg-block mx-3 mx-xl-5 text-center">
+                        <img width="300" height="67" src="img/navbar-brand.png" alt="Logo">
+                    </div>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#love-story">Love Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#photos">Photos</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.collapse -->
+            </div>
+            <!-- //.container -->
+        </nav>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Spacer -->
+    <span class="spacer d-block w-100"></span>
+
+
+    <!-- Section - Hero Start -->
+    <section id="hero" class="bg-img-cover bg-overlay position-relative">
+        <div class="container">
+            <div class="row g-0 justify-content-center justify-content-lg-start">
+                <div class="col-md-9 col-lg-6 col-xl-5 bg-white px-4 py-5 position-relative rounded shadow">
+                    <h5 class="font-alt fw-bold lh-1 mb-3 text-center">WE ARE GETTING MARRIED</h5>
+                    <span class="section-divider divider-secondary"></span>
+
+                    <div class="img-clip-path clip-hero position-relative" style="overflow: hidden; height: 65%;">
+                        <img src="images/the-couple-hero-copy1.jpg" alt="" class="img-fluid" style="object-fit: cover; object-position: bottom;">
+                    </div>
+                    <!-- //.img-clip-path -->
+
+                    <div class="align-items-center d-flex justify-content-center mb-2 flex-column flex-lg-row">
+                        <p class="m-0 fs-2 d-none d-lg-block" style="font-family: 'Brush Script MT', cursive; font-style: italic;">M. Samsul Rizal</p>
+                        <p class="m-0 fs-5 d-block d-lg-none" style="font-family: 'Brush Script MT', cursive; font-style: italic;">M. Samsul Rizal</p>
+                        <span class="icon-svg icon-svg-lg mx-2"><img src="img/icon-wedding-ampersand.svg" alt=""></span>
+                        <p class="m-0 fs-2 d-none d-lg-block" style="font-family: 'Brush Script MT', cursive; font-style: italic;">Marisa Amni</p>
+                        <p class="m-0 fs-5 d-block d-lg-none" style="font-family: 'Brush Script MT', cursive; font-style: italic;">Marisa Amni</p>
+                    </div>
+                    <!-- //.align-items-center -->
+                    <p class="fs-5 d-none d-lg-block text-center text-muted">Mohon Doa Restu</p>
+                    <p class="fs-6 d-block d-lg-none text-center text-muted">Mohon Doa Restu</p>
+
+                    <!-- Ornament -->
+                    <img width="100" src="img/ornament-divider.png" alt="" class="d-block mx-auto">
+                    <span class="ornament-corner ornament-primary ornament-top"></span>
+                    <span class="ornament-corner ornament-primary"></span>
+                </div>
+                <!-- //.col-md-9 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- Section - Hero End -->
+
+
+    <!-- Section - The Couple Start -->
+    <section id="the-couple">
+        <div class="container">
+            <div class="row mb-5 pb-lg-5">
+                <div class="col-12 text-center">
+                    <h2 class="font-alt fs-3 fw-bold text-uppercase">Pasangan Bahagia</h2>
+                    <p class="font-alt fs-5 fst-italic text-muted">Pernikahan yang bahagia adalah bersatunya dua orang
+                        yang baik hati dan pemaaf.</p>
+                    <span class="section-divider divider-primary"></span>
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row justify-content-center">
+
+                <!-- The Bride -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="bg-white border mb-3 mb-md-0 p-2 position-relative">
+                                <img class="img-fluid" src="images/the-couple-1-copy1.jpg" alt="">
+                                <!-- <span class="bg-secondary bottom-0 end-0 font-alt fst-italic m-3 position-absolute px-3 py-2 rounded text-white">The Bride</span> -->
+                            </div>
+                            <!-- //.bg-white -->
+                        </div>
+                        <!-- //.col-md-6 -->
+
+                        <div class="col-md-6 text-center text-md-start">
+                            <h5 class="font-alt fw-bold text-uppercase">M. Samsul Rizal</h5>
+                            <p class="font-alt fst-italic text-muted">Aku sungguh mencintainya</p>
+                            <hr class="border-secondary mx-auto mx-md-0 sep-line">
+                            <p class="m-0">Aku tergila-gila padanya. Dia memiliki hati yang luar biasa. Aku sangat
+                                diberkati dan bersemangat untuk menghabiskan setiap hari selama sisa hidupku dengan
+                                sahabatku..</p>
+                        </div>
+                        <!-- //.col-md-6 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //.col-lg-6 -->
+
+
+                <!-- The Groom -->
+                <div class="col-lg-6">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="bg-white border mb-3 mb-md-0 p-2 position-relative">
+                                <img class="img-fluid" src="images/the-couple-2-copy.jpg" alt="">
+                                <!-- <span class="bg-secondary bottom-0 end-0 font-alt fst-italic m-3 position-absolute px-3 py-2 rounded text-white">The Groom</span> -->
+                            </div>
+                            <!-- //.bg-white -->
+                        </div>
+                        <!-- //.col-md-6 -->
+
+                        <div class="col-md-6 text-center text-md-start">
+                            <h5 class="font-alt fw-bold text-uppercase">Marisa Amni</h5>
+                            <p class="font-alt fst-italic text-muted">Aku sungguh mencintainya</p>
+                            <hr class="border-secondary mx-auto mx-md-0 sep-line">
+                            <p class="m-0">Dia sangat berarti bagiku dan aku tidak percaya dia benar-benar akan
+                                menikahiku. Aku sangat bersemangat untuk menghabiskan sisa hidupku bersamanya. Dia
+                                sempurna untukku.</p>
+                        </div>
+                        <!-- //.col-md-6 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //.col-lg-6 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- Section - The Couple End -->
+
+
+    <!-- Section - The Wedding Event Start -->
+    <section id="the-wedding-event" class="bg-img-cover bg-overlay position-relative">
+        <div class="container position-relative">
+            <div class="row mb-5 pb-lg-5">
+                <div class="col-12 text-center">
+                    <h2 class="font-alt fs-3 fw-bold text-uppercase text-light">Acara</h2>
+                    <p class="font-alt fs-5 fst-italic text-light">Jika kamu hanya memiliki satu senyuman, berikanlah
+                        pada orang yang kamu cintai.</p>
+                    <span class="section-divider divider-secondary"></span>
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row gx-lg-5 justify-content-center">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-5 mb-lg-0">
+                    <div class="bg-white h-100 p-5 rounded shadow">
+                        <h3 class="font-alt fs-4 fw-bold text-uppercase">Akad Nikah</h3>
+                        <hr class="border-secondary sep-line">
+                        <p class="mb-4">Lokasi Acara Akad Nikah SDN 1 Masbagik Selatan. Jika masih bingung Lokasi
+                            Tempatnya Bisa Lihat Link Map Dibawah!!</p>
+
+                        <div class="align-items-center d-flex mb-3">
+                            <span class="icon-svg me-4"><img src="img/icon-wedding-calendar.svg" alt=""></span>
+                            <span>
+                                Minggu 18 Agustus 2024<br>
+                                09:00 - 10:00 WITA
+                            </span>
+                        </div>
+                        <!-- //.align-items-center -->
+
+                        <div class="align-items-center d-flex mb-4">
+                            <!-- <span class="icon-svg me-4"><img src="img/icon-wedding-arch.svg" alt=""></span>
+                            <span>St. Patrick's Catholic Church<br>
+                                619 10th Street NW, Washington, DC
+                            </span> -->
+                        </div>
+                        <!-- //.align-items-center -->
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn fs-9 ls-1 me-3">
+                                <a href="https://maps.app.goo.gl/tdMyL3RFz7V2FeaA7"
+                                    class="page-scroll btn border-0 fs-9 ls-1 text-decoration-underline"
+                                    target="_blank">Lokasi Map</a>
+                            </button>
+                        </div>
+                        <!-- //.d-flex -->
+                    </div>
+                    <!-- //.bg-white -->
+                </div>
+                <!-- //.col-md-9 -->
+
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <div class="bg-white h-100 p-5 rounded shadow">
+                        <h3 class="font-alt fs-4 fw-bold text-uppercase">Resepsi</h3>
+                        <hr class="border-secondary sep-line">
+                        <p class="mb-4">Lokasi Acara Resepsi Pernikahan SDN 1 Masbagik Selatan. Jika masih bingung
+                            Lokasi Tempatnya Bisa Lihat Link Map Dibawah!!</p>
+
+                        <div class="align-items-center d-flex mb-3">
+                            <span class="icon-svg me-4"><img src="img/icon-wedding-calendar.svg" alt=""></span>
+                            <span>
+                                Minggu 18 Agustus 2024<br>
+                                11:00 WITA - Sampai Selesai
+                            </span>
+                        </div>
+                        <!-- //.align-items-center -->
+
+                        <div class="align-items-center d-flex mb-4">
+                            <!-- <span class="icon-svg me-4"><img src="img/icon-wedding-cake.svg" alt=""></span> -->
+                            <!-- <span>The Mayflower Hotel<br> -->
+                            <!-- 620 11th Street NW, Washington, DC -->
+                            </span>
+                        </div>
+                        <!-- //.align-items-center -->
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn fs-9 ls-1 me-3">
+                                <a href="https://maps.app.goo.gl/tdMyL3RFz7V2FeaA7"
+                                    class="page-scroll btn border-0 fs-9 ls-1 text-decoration-underline"
+                                    target="_blank">Lokasi Map</a>
+                            </button>
+                        </div>
+                        <!-- //.d-flex -->
+                    </div>
+                    <!-- //.bg-white -->
+                </div>
+                <!-- //.col-md-9 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+
+        <!-- Modal - How to Get There Start -->
+        <div id="how-to-get-there-modal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded">
+                    <div class="modal-header justify-content-center">
+                        <h3 class="modal-title fs-4 font-alt fw-bold text-uppercase">How To Get To The Events</h3>
+                        <button type="button" class="end-0  fs-3 me-3 position-absolute" data-bs-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <!-- //.modal-header -->
+
+                    <div class="modal-body p-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6 mb-5 mb-lg-0">
+                                <div class="mb-4 text-center">
+                                    <h4 class="font-alt fs-5 fw-bold text-primary text-uppercase">The Ceremony</h4>
+                                    <p class="font-alt fst-italic text-muted">(St. Patrick's Church)</p>
+                                    <img src="images/the-wedding-event-modal-1.jpg" alt="" class="img-fluid rounded">
+                                </div>
+                                <!-- //.mb-4 -->
+
+                                <div class="mb-4">
+                                    <h6 class="fw-bold ls-1 text-uppercase">By Car</h6>
+                                    <hr class="border-secondary my-2 sep-line">
+                                    <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s.</p>
+                                </div>
+                                <!-- //.mb-4 -->
+
+                                <h6 class="fw-bold ls-1 text-uppercase">By Train</h6>
+                                <hr class="border-secondary my-2 sep-line">
+                                <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s.</p>
+                            </div>
+                            <!-- //.col-lg-6 -->
+
+                            <div class="col-lg-6">
+                                <div class="mb-4 text-center">
+                                    <h4 class="font-alt fs-5 fw-bold text-primary text-uppercase">The Reception</h4>
+                                    <p class="font-alt fst-italic text-muted">(The Mayflower Hotel)</p>
+                                    <img src="images/the-wedding-event-modal-2.jpg" alt="" class="img-fluid rounded">
+                                </div>
+                                <!-- //.mb-4 -->
+
+                                <div class="mb-4">
+                                    <h6 class="fw-bold ls-1 text-uppercase">By Car</h6>
+                                    <hr class="border-secondary my-2 sep-line">
+                                    <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s.</p>
+                                </div>
+                                <!-- //.mb-4 -->
+
+                                <h6 class="fw-bold ls-1 text-uppercase">By Train</h6>
+                                <hr class="border-secondary my-2 sep-line">
+                                <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s.</p>
+                            </div>
+                            <!-- //.col-lg-6 -->
+                        </div>
+                        <!-- //.row -->
+                    </div>
+                    <!-- //.modal-body -->
+
+                    <div class="modal-footer d-sm-none">
+                        <button class="btn fs-9 w-100" data-bs-dismiss="modal" aria-label="Close">Okay, I get
+                            it!</button>
+                    </div>
+                    <!-- //.modal-footer -->
+                </div>
+                <!-- //.modal-content -->
+            </div>
+            <!-- //.modal-dialog -->
+        </div>
+        <!-- Modal - How to Get There End -->
+
+    </section>
+    <!-- Section - The Wedding Event End -->
+
+
+    <!-- Section - Love Story Start -->
+    <section id="love-story">
+        <div class="container">
+            <div class="row mb-5 pb-lg-5">
+                <div class="col-12 text-center">
+                    <h2 class="font-alt fs-3 fw-bold text-uppercase">Kisah Cinta Kita</h2>
+                    <p class="font-alt fs-5 fst-italic text-muted">Hanya ada satu kebahagiaan dalam hidup ini, mencintai
+                        dan dicintai.</p>
+                    <span class="section-divider divider-primary"></span>
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div id="carousel-love-story" class="carousel mb-4">
+                    <div
+                        class="carousel-cell align-items-center g-0 justify-content-center justify-content-lg-between row">
+                        <div class="col-md-8 col-lg-5 mb-5 mb-lg-0">
+                            <div class="img-clip-path clip-love-story position-relative">
+                                <img src="images/love-story-1-copy.jpg" alt="" class="img-fluid">
+                            </div>
+                            <!-- //.img-clip-path -->
+                        </div>
+                        <!-- //.col-md-8 -->
+
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h4 class="font-alt">Cerita Singkat Kisah Cinta</h4>
+                            <hr class="border-secondary mx-auto mx-lg-0 sep-line">
+                            <p>Kisah cinta mereka adalah perjalanan indah yang dimulai di SMA, dengan kenangan-kenangan
+                                manis yang akan terus mereka kenang sepanjang hidup. Sebuah kisah tentang dua hati yang
+                                bertemu di tempat dan waktu yang tepat, yang bersama-sama menulis cerita mereka sendiri.
+                            </p>
+                        </div>
+                        <!-- //.col-lg-6 -->
+                    </div>
+                    <!-- //.carousel-cell -->
+
+                    <div
+                        class="carousel-cell align-items-center g-0 justify-content-center justify-content-lg-between row">
+                        <div class="col-md-8 col-lg-5 mb-5 mb-lg-0">
+                            <div class="img-clip-path clip-love-story position-relative">
+                                <img src="images/love-story-2-copy.jpg" alt="" class="img-fluid">
+                            </div>
+                            <!-- //.img-clip-path -->
+                        </div>
+                        <!-- //.col-md-8 -->
+
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h4 class="font-alt">Akhirnya Memutuskan Untuk Berlabuh Ke Pelaminan</h4>
+                            <hr class="border-secondary mx-auto mx-lg-0 sep-line">
+                            <p>Setelah bertahun-tahun bersama sejak masa SMA, kisah cinta mereka terus berkembang.
+                                Melewati masa kuliah, merintis karier, dan menghadapi berbagai tantangan, cinta mereka
+                                semakin kuat. Setiap perbedaan yang ada, mereka selesaikan dengan kedewasaan dan rasa
+                                saling percaya. Setiap momen bahagia, mereka rayakan bersama, dan setiap kesedihan,
+                                mereka hadapi dengan tangan yang selalu menggenggam erat.</p>
+                        </div>
+                        <!-- //.col-lg-6 -->
+                    </div>
+                </div>
+                <!-- //.carousel -->
+
+                <!-- Carousel page -->
+                <ul class="carousel-page font-alt fs-5 fw-bold list-inline text-center"></ul>
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- Section - Love Story End -->
+
+
+    <!-- Section - Proposed Start -->
+    <section id="proposed" class="bg-img-cover bg-overlay position-relative">
+        <div class="container position-relative">
+            <div class="row g-0">
+                <div class="col-md-9 col-lg-6 col-xl-5 bg-white p-5 position-relative rounded">
+                    <h3 class="font-alt fs-4 fw-bold text-uppercase">Bagaimana Dia Melamar</h3>
+                    <hr class="border-secondary sep-line">
+                    <p>Saat mereka bersama, dia meminta agar mereka duduk sejenak. Dengan hati yang berdebar, dia mulai
+                        mengungkapkan perasaannya, menceritakan betapa berartinya setiap momen yang telah mereka lewati
+                        bersama. Kemudian, dia mengeluarkan sebuah cincin dari sakunya, berlutut, dan dengan suara yang
+                        penuh ketulusan, dia bertanya, "Maukah kamu menikah denganku?"</p>
+                    <p>Mata dia berbinar, penuh haru dan kebahagiaan. Dengan senyuman yang tidak bisa diungkapkan, dia
+                        menjawab "Ya" dengan penuh keyakinan. Di tempat yang penuh dengan kenangan masa lalu, mereka
+                        kini menciptakan kenangan baru yang akan mereka bawa hingga akhir hayat.</p>
+
+                    <!-- Ornament -->
+                    <img width="100" src="img/ornament-divider.png" alt="" class="d-block mx-auto">
+                    <span class="ornament-corner ornament-primary"></span>
+                </div>
+                <!-- //.col-md-9 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- Section - Proposed End -->
+
+
+    <!-- Section - Photos Start -->
+    <section id="photos">
+        <div class="container position-relative">
+            <div class="row mb-5 pb-lg-5">
+                <div class="col-12 text-center">
+                    <h2 class="font-alt fs-3 fw-bold text-uppercase">Galeri Foto</h2>
+                    <p class="font-alt fs-5 fst-italic text-muted">Semoga Anda hidup selama yang Anda inginkan, dan
+                        mencintai selama yang Anda hidup.</p>
+                    <span class="section-divider divider-primary"></span>
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="gallery-wrapper">
+                        <div class="gallery-grid">
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-1-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-1-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-2-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-2-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-3-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-3-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-4-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-4-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-5-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-5-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-6-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-6-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-7-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-7-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <figure>
+                                    <div class="gallery-img">
+                                        <a href="images/gallery-8-copy.jpg" data-gall="photos">
+                                            <img src="images/gallery-8-copy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- //.gallery-img -->
+                                </figure>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.gallery-grid -->
+                    </div>
+                    <!-- //.gallery-wrapper -->
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- Section - Photos End -->
+    <!-- Footer Start -->
+    <footer class="bg-img-cover bg-overlay position-relative">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="font-alt fs-3 fw-bold text-uppercase text-light">We Can't Wait to See You!</h2>
+                    <p class="font-alt fs-5 fst-italic text-light">Agustus, 18 2024 | SDN 1 Masbagik Selatan</p>
+                    <img width="100" src="img/ornament-divider.png" alt="" class="d-block mx-auto">
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+
+        <!-- Ornament -->
+        <span class="ornament-corner ornament-lg ornament-light"></span>
+    </footer>
+    <!-- Footer End -->
+
+    <audio id="background-audio" preload="auto" loop>
+        <source src="audio/cinta_terakhir_cover.mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- Required JS files -->
+    <script 
+    src="js/script.min.js">
+    </script>
+
+    <script>
+        window.addEventListener('load', function() {
+            const audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+            });
+        });
+
+        // Tambahkan event listener untuk tombol play
+        document.addEventListener('click', function() {
+            const audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+            });
+        });
+    </script>
+</body>
+
+</html>
