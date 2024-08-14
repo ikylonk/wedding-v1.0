@@ -43,6 +43,15 @@
     </div> -->
     <!-- Preloader End -->
 
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Pop-up Notification -->
+    <div id="notification">
+        <p>Situs web ini akan memutar musik. Harap aktifkan suara di perangkat Anda.</p>
+        <button id="close-notification">OK</button>
+    </div>
+
 
     <!-- Header Start -->
     <header class="fixed-top">
@@ -106,7 +115,8 @@
                     <span class="section-divider divider-secondary"></span>
 
                     <div class="img-clip-path clip-hero position-relative" style="overflow: hidden; height: 65%;">
-                        <img src="images/the-couple-hero-copy1.WebP" alt="" class="img-fluid" style="object-fit: cover; object-position: bottom;" loading="lazy">
+                        <img src="images/the-couple-hero-copy1.WebP" alt="" class="img-fluid"
+                            style="object-fit: cover; object-position: bottom;" loading="lazy">
                     </div>
                     <!-- //.img-clip-path -->
 
@@ -307,87 +317,6 @@
             <!-- //.row -->
         </div>
         <!-- //.container -->
-
-        <!-- Modal - How to Get There Start -->
-        <div id="how-to-get-there-modal" class="modal fade" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content rounded">
-                    <div class="modal-header justify-content-center">
-                        <h3 class="modal-title fs-4 font-alt fw-bold text-uppercase">How To Get To The Events</h3>
-                        <button type="button" class="end-0  fs-3 me-3 position-absolute" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <!-- //.modal-header -->
-
-                    <div class="modal-body p-lg-4">
-                        <div class="row">
-                            <div class="col-lg-6 mb-5 mb-lg-0">
-                                <div class="mb-4 text-center">
-                                    <h4 class="font-alt fs-5 fw-bold text-primary text-uppercase">The Ceremony</h4>
-                                    <p class="font-alt fst-italic text-muted">(St. Patrick's Church)</p>
-                                    <img src="images/the-wedding-event-modal-1.jpg" alt="" class="img-fluid rounded">
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <div class="mb-4">
-                                    <h6 class="fw-bold ls-1 text-uppercase">By Car</h6>
-                                    <hr class="border-secondary my-2 sep-line">
-                                    <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                        1500s.</p>
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <h6 class="fw-bold ls-1 text-uppercase">By Train</h6>
-                                <hr class="border-secondary my-2 sep-line">
-                                <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                    1500s.</p>
-                            </div>
-                            <!-- //.col-lg-6 -->
-
-                            <div class="col-lg-6">
-                                <div class="mb-4 text-center">
-                                    <h4 class="font-alt fs-5 fw-bold text-primary text-uppercase">The Reception</h4>
-                                    <p class="font-alt fst-italic text-muted">(The Mayflower Hotel)</p>
-                                    <img src="images/the-wedding-event-modal-2.jpg" alt="" class="img-fluid rounded">
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <div class="mb-4">
-                                    <h6 class="fw-bold ls-1 text-uppercase">By Car</h6>
-                                    <hr class="border-secondary my-2 sep-line">
-                                    <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                        1500s.</p>
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <h6 class="fw-bold ls-1 text-uppercase">By Train</h6>
-                                <hr class="border-secondary my-2 sep-line">
-                                <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                    1500s.</p>
-                            </div>
-                            <!-- //.col-lg-6 -->
-                        </div>
-                        <!-- //.row -->
-                    </div>
-                    <!-- //.modal-body -->
-
-                    <div class="modal-footer d-sm-none">
-                        <button class="btn fs-9 w-100" data-bs-dismiss="modal" aria-label="Close">Okay, I get
-                            it!</button>
-                    </div>
-                    <!-- //.modal-footer -->
-                </div>
-                <!-- //.modal-content -->
-            </div>
-            <!-- //.modal-dialog -->
-        </div>
-        <!-- Modal - How to Get There End -->
 
     </section>
     <!-- Section - The Wedding Event End -->
@@ -638,30 +567,107 @@
     </footer>
     <!-- Footer End -->
 
-    <audio id="background-audio" preload="auto" loop>
-        <source src="audio/cinta_terakhir_cover.mp3" type="audio/mp3">
+    <!-- <audio id="background-audio" controls autoplay loop>
+        <source src="audio/cinta_terakhir_cover1.mp3" type="audio/mp3">
+    </audio> -->
+    <audio id="background-audio" loop>
+        <source src="audio/cinta_terakhir_cover1.mp3" type="audio/mp3">
     </audio>
-
     <!-- Required JS files -->
-    <script src="js/script.min.js">
-    </script>
+    <script src="js/script.min.js"></script>
 
     <script>
-        window.addEventListener('load', function () {
-            const audio = document.getElementById('background-audio');
-            audio.play().catch(function (error) {
-                console.log('Autoplay was prevented:', error);
+        const audio = document.getElementById('background-audio');
+        const notification = document.getElementById('notification');
+        const closeButton = document.getElementById('close-notification');
+
+        // Tampilkan notifikasi
+        notification.style.display = 'block';
+
+        // Memutar audio setelah pengguna menutup notifikasi
+        closeButton.addEventListener('click', () => {
+            notification.style.display = 'none';
+            audio.play().then(() => {
+                console.log('Audio is playing');
+            }).catch((error) => {
+                console.error('Error playing audio:', error);
             });
         });
 
-        // Tambahkan event listener untuk tombol play
-        document.addEventListener('click', function () {
-            const audio = document.getElementById('background-audio');
-            audio.play().catch(function (error) {
-                console.log('Autoplay was prevented:', error);
-            });
+        // Tampilkan notifikasi
+        function showNotification() {
+            document.getElementById('notification').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        // Menutup notifikasi
+        document.getElementById('close-notification').addEventListener('click', () => {
+            document.getElementById('notification').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
         });
+
+        // Panggil fungsi untuk menampilkan notifikasi
+        showNotification();
     </script>
+
+    <style>
+        /* Gaya untuk pop-up */
+        #notification {
+            display: none;
+            /* Tersembunyi secara default */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            z-index: 9999;
+            /* Z-index tinggi untuk menindih semua elemen */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            /* Sudut melengkung */
+        }
+
+        /* Gaya untuk overlay */
+        #overlay {
+            display: none;
+            /* Tersembunyi secara default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Latar belakang transparan */
+            z-index: 9998;
+            /* Z-index sedikit lebih rendah dari pop-up */
+        }
+
+        /* Gaya untuk tombol */
+        #close-notification {
+            background-color: #007bff;
+            /* Warna latar belakang tombol */
+            color: white;
+            /* Warna teks tombol */
+            border: none;
+            border-radius: 5px;
+            /* Sudut melengkung tombol */
+            padding: 10px 15px;
+            /* Padding tombol */
+            cursor: pointer;
+            /* Kursor pointer saat hover */
+            transition: background-color 0.3s;
+            /* Transisi warna */
+        }
+
+        /* Efek hover untuk tombol */
+        #close-notification:hover {
+            background-color: #0056b3;
+            /* Warna saat hover */
+        }
+    </style>
+
 </body>
 
 </html>
