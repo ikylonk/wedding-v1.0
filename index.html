@@ -17,7 +17,11 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Favicon -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wedding Rizal & Marisa" />
+    <meta property="og:description" content="Undangan Pernikahan Rizal dan Marisa" />
+    <meta property="og:image" content="https://example.com/images/wedding-image.jpg" />
+
     <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon.ico">
@@ -584,8 +588,9 @@
         // Ambil nama dari URL
         const urlParams = new URLSearchParams(window.location.search);
         const guestName = urlParams.get('to') || 'Tamu Undangan'; // Default jika tidak ada nama
-        document.getElementById('guest-name').textContent = guestName; // Set nama ke elemen
-        document.getElementById('guest-name-mobile').textContent = guestName;
+        const formattedName = guestName.replace(/-/g, ' ');
+        document.getElementById('guest-name').textContent = formattedName; // Set nama ke elemen
+        document.getElementById('guest-name-mobile').textContent = formattedName;
 
 
 
