@@ -139,7 +139,7 @@
                     <p class="fs-6 d-block d-lg-none text-center text-muted m-0">Yth :</p>
 
                     <p id="guest-name" class="fs-5 d-none d-lg-block text-center text-muted">Tamu Undangan</p>
-                    <p id="guest-name" class="fs-6 d-block d-lg-none text-center text-muted">Tamu Undangan</p>
+                    <p id="guest-name-mobile" class="fs-6 d-block d-lg-none text-center text-muted">Tamu Undangan</p>
 
                     <!-- Ornament -->
                     <img width="100" src="img/ornament-divider.png" alt="" class="d-block mx-auto">
@@ -585,6 +585,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         const guestName = urlParams.get('to') || 'Tamu Undangan'; // Default jika tidak ada nama
         document.getElementById('guest-name').textContent = guestName; // Set nama ke elemen
+        document.getElementById('guest-name-mobile').textContent = guestName;
+
 
 
         const audio = document.getElementById('background-audio');
